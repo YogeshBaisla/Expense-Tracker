@@ -1,0 +1,30 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%vw;
+    height: 33%vh;
+    min-width: 20px;
+    background-color: #9B9B9B;
+}
+.Amount{
+    color: #89E148;
+}
+.capsuleButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #B5DC52 0%, #89E148 100%);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px; /* Adjust this value to change the curvature of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .capsuleButton:hover {
+    background-color: #45a049;
+  }
