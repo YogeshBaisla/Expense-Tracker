@@ -3,6 +3,8 @@ import style from "./HomePage.module.css"
 import Wallet from "../Wallet/Wallet";
 import Expense from "../Expense/Expense";
 import ExpenseChart from "../ExpenseChart/ExpenseChart";
+import Transaction from "../Transaction/Transaction";
+import TopExpense from "../TopExpense/TopExpense";
 
 export default function HomePage(){
     return(<div className={style.Container}>
@@ -13,9 +15,9 @@ export default function HomePage(){
                 <div><Expense/></div>
                 <div><ExpenseChart/></div>
             </div>
-            <div> div 2
-            <div>2.1</div>
-            <div>2.2</div>
+            <div>
+            <div><Transaction/></div>
+            <div><TopExpense/></div>
             </div>
 
         </div>
