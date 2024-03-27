@@ -15,9 +15,11 @@ export default function HomePage(){
                 <div><Expense/></div>
                 <div><ExpenseChart/></div>
             </div>
-            <div>
+            <div className={style.TransactionExpenseContainer}>
             <div><Transaction/></div>
-            <div><TopExpense/></div>
+            <div>
+                <h1>Top Expenses</h1>
+                <div class={style.TopExpenseContainer}><TopExpense/></div></div>
             </div>
 
         </div>

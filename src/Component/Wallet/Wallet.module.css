@@ -3,10 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 33%vw;
-    height: 33%vh;
-    min-width: 20px;
+    width: 355.41px;
+    height: 181px;
     background-color: #9B9B9B;
+    border-radius: 15px;
+    opacity: 0px;
+
 }
 .Amount{
     color: #89E148;
@@ -28,3 +30,11 @@
   .capsuleButton:hover {
     background-color: #45a049;
   }
+  /* .POP{
+    display: flex;
+    width: 5000px;
+    height: 5000px;
+    color: white;
+    background: black;
+    z-index: 100;
+  } */
