@@ -1,14 +1,8 @@
 import React from "react";
 import { PieChart, Pie, Legend, Cell, Label } from "recharts";
 
-export default function ExpenseChart() {
-  const data01 = [
-    { name: "Food", value: 100, color: "#A000FF" },
-    { name: "Entertainment", value: 350, color: "#FF9304" },
-    { name: "Travel", value: 50, color: "#FDE006" }
-  ];
-
-  data01.sort((obj1, obj2) => {
+export default function ExpenseChart({data}) {
+  data.sort((obj1, obj2) => {
     return obj2.value - obj1.value;
   });
 
@@ -29,7 +23,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
     <div className="pie-chart-container" style={{ width: "33%" }}>
       <PieChart width={250} height={250}>
         <Pie
-          data={data01}
+          data={data}
           dataKey="value"
           nameKey="name"
           cx="50%"
@@ -39,7 +33,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
           label = {renderCustomizedLabel}
           labelLine = {false}
         >
-          {data01.map((entry, index) => (
+          {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={entry.color} />
           ))}
         </Pie>
